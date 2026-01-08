@@ -1,3 +1,13 @@
+/* Index *
+
+ 01. Theme Setup
+ 02. Utility Classes
+ 03. Components
+
+
+
+*/
+
 :root {
   --theme-primary: #30b868;
   --theme-secondary: #001931;
@@ -8,6 +18,8 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* 01 Theme Setup */
 
 *,
 *::before,
@@ -55,6 +67,235 @@ h2 {
   line-height: 1.2;
 }
 
+img {
+  max-width: 100%;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 02. Utility Classes */
+.grid {
+  display: grid;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-10 {
+  gap: 1rem;
+}
+.gap-15 {
+  gap: 1.5rem;
+}
+.gap-20 {
+  gap: 2rem;
+}
+.gap-25 {
+  gap: 2.5rem;
+}
+.gap-30 {
+  gap: 3rem;
+}
+
+.mt-5 {
+  margin-top: 0.5rem;
+}
+.mt-10 {
+  margin-top: 1rem;
+}
+.mt-15 {
+  margin-top: 1.5rem;
+}
+.mt-20 {
+  margin-top: 2rem;
+}
+.mt-25 {
+  margin-top: 2.5rem;
+}
+.mt-30 {
+  margin-top: 3rem;
+}
+.mt-35 {
+  margin-top: 3.5rem;
+}
+.mt-40 {
+  margin-top: 4rem;
+}
+.mt-45 {
+  margin-top: 4.5rem;
+}
+.mt-50 {
+  margin-top: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 0.5rem;
+}
+.mb-10 {
+  margin-bottom: 1rem;
+}
+.mb-15 {
+  margin-bottom: 1.5rem;
+}
+.mb-20 {
+  margin-bottom: 2rem;
+}
+.mb-25 {
+  margin-bottom: 2.5rem;
+}
+.mb-30 {
+  margin-bottom: 3rem;
+}
+.mb-35 {
+  margin-bottom: 3.5rem;
+}
+.mb-40 {
+  margin-bottom: 4rem;
+}
+.mb-45 {
+  margin-bottom: 4.5rem;
+}
+.mb-50 {
+  margin-bottom: 5rem;
+}
+
+.ml-5 {
+  margin-left: 0.5rem;
+}
+.ml-10 {
+  margin-left: 1rem;
+}
+.ml-15 {
+  margin-left: 1.5rem;
+}
+.ml-20 {
+  margin-left: 2rem;
+}
+.ml-25 {
+  margin-left: 2.5rem;
+}
+.ml-30 {
+  margin-left: 3rem;
+}
+.ml-35 {
+  margin-left: 3.5rem;
+}
+.ml-40 {
+  margin-left: 4rem;
+}
+.ml-45 {
+  margin-left: 4.5rem;
+}
+.ml-50 {
+  margin-left: 5rem;
+}
+
+.mr-5 {
+  margin-right: 0.5rem;
+}
+.mr-10 {
+  margin-right: 1rem;
+}
+.mr-15 {
+  margin-right: 1.5rem;
+}
+.mr-20 {
+  margin-right: 2rem;
+}
+.mr-25 {
+  margin-right: 2.5rem;
+}
+.mr-30 {
+  margin-right: 3rem;
+}
+.mr-35 {
+  margin-right: 3.5rem;
+}
+.mr-40 {
+  margin-right: 4rem;
+}
+.mr-45 {
+  margin-right: 4.5rem;
+}
+.mr-50 {
+  margin-right: 5rem;
+}
+
+.mx-5 {
+  margin-inline: 0.5rem;
+}
+.mx-10 {
+  margin-inline: 1rem;
+}
+.mx-15 {
+  margin-inline: 1.5rem;
+}
+.mx-20 {
+  margin-inline: 2rem;
+}
+.mx-25 {
+  margin-inline: 2.5rem;
+}
+.mx-30 {
+  margin-inline: 3rem;
+}
+.mx-35 {
+  margin-inline: 3.5rem;
+}
+.mx-40 {
+  margin-inline: 4rem;
+}
+.mx-45 {
+  margin-inline: 4.5rem;
+}
+.mx-50 {
+  margin-inline: 5rem;
+}
+
+.my-5 {
+  margin-block: 0.5rem;
+}
+.my-10 {
+  margin-block: 1rem;
+}
+.my-15 {
+  margin-block: 1.5rem;
+}
+.my-20 {
+  margin-block: 2rem;
+}
+.my-25 {
+  margin-block: 2.5rem;
+}
+.my-30 {
+  margin-block: 3rem;
+}
+.my-35 {
+  margin-block: 3.5rem;
+}
+.my-40 {
+  margin-block: 4rem;
+}
+.my-45 {
+  margin-block: 4.5rem;
+}
+.my-50 {
+  margin-block: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -68,6 +309,7 @@ h2 {
   align-items: center;
 }
 
+/* 03. Components */
 .container {
   max-width: 139rem;
   padding: 0 1.5rem;
