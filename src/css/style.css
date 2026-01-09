@@ -615,7 +615,6 @@ li {
     }
   }
 }
-
 @media (max-width: 768px) {
   .kv-header__right {
     display: none;
