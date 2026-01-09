@@ -608,6 +608,7 @@ li {
 
   & > a {
     color: var(--theme-secondary);
+    padding-block: 1rem;
 
     &:hover {
       color: var(--theme-primary);
