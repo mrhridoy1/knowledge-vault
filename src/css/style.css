@@ -3,15 +3,17 @@
  01. Theme Setup
  02. Utility Classes
  03. Components
-
-
-
+ 04. Heading Style
+ 05. Hero Style
+ 06. Notes Style
 */
 
 :root {
-  --theme-primary: #30b868;
+  --theme-primary: #469165;
+  --theme-primary-light: #30b868;
   --theme-secondary: #001931;
   --theme-accent: #f95555;
+  --bg-1: #fbfbfb;
   --paragraph-color: #627382;
   --common-white: #ffffff;
   --font-inter: "Inter", sans-serif;
@@ -139,6 +141,12 @@ li {
 }
 .mt-50 {
   margin-top: 5rem;
+}
+.mt-55 {
+  margin-top: 5.5rem;
+}
+.mt-60 {
+  margin-top: 6rem;
 }
 
 .mb-5 {
@@ -296,6 +304,142 @@ li {
   margin-block: 5rem;
 }
 
+.pt-5 {
+  padding-top: 0.5rem;
+}
+.pt-10 {
+  padding-top: 1rem;
+}
+.pt-15 {
+  padding-top: 1.5rem;
+}
+.pt-20 {
+  padding-top: 2rem;
+}
+.pt-25 {
+  padding-top: 2.5rem;
+}
+.pt-30 {
+  padding-top: 3rem;
+}
+.pt-35 {
+  padding-top: 3.5rem;
+}
+.pt-40 {
+  padding-top: 4rem;
+}
+.pt-45 {
+  padding-top: 4.5rem;
+}
+.pt-50 {
+  padding-top: 5rem;
+}
+.pt-55 {
+  padding-top: 5.5rem;
+}
+.pt-60 {
+  padding-top: 6rem;
+}
+
+.pb-5 {
+  padding-bottom: 0.5rem;
+}
+.pb-10 {
+  padding-bottom: 1rem;
+}
+.pb-15 {
+  padding-bottom: 1.5rem;
+}
+.pb-20 {
+  padding-bottom: 2rem;
+}
+.pb-25 {
+  padding-bottom: 2.5rem;
+}
+.pb-30 {
+  padding-bottom: 3rem;
+}
+.pb-35 {
+  padding-bottom: 3.5rem;
+}
+.pb-40 {
+  padding-bottom: 4rem;
+}
+.pb-45 {
+  padding-bottom: 4.5rem;
+}
+.pb-50 {
+  padding-bottom: 5rem;
+}
+.pb-55 {
+  padding-bottom: 5.5rem;
+}
+.pb-60 {
+  padding-bottom: 6rem;
+}
+
+.px-5 {
+  padding-inline: 0.5rem;
+}
+.px-10 {
+  padding-inline: 1rem;
+}
+.px-15 {
+  padding-inline: 1.5rem;
+}
+.px-20 {
+  padding-inline: 2rem;
+}
+.px-25 {
+  padding-inline: 2.5rem;
+}
+.px-30 {
+  padding-inline: 3rem;
+}
+.px-35 {
+  padding-inline: 3.5rem;
+}
+.px-40 {
+  padding-inline: 4rem;
+}
+.px-45 {
+  padding-inline: 4.5rem;
+}
+.px-50 {
+  padding-inline: 5rem;
+}
+
+.py-5 {
+  padding-block: 0.5rem;
+}
+.py-10 {
+  padding-block: 1rem;
+}
+.py-15 {
+  padding-block: 1.5rem;
+}
+.py-20 {
+  padding-block: 2rem;
+}
+.py-25 {
+  padding-block: 2.5rem;
+}
+.py-30 {
+  padding-block: 3rem;
+}
+.py-35 {
+  padding-block: 3.5rem;
+}
+.py-40 {
+  padding-block: 4rem;
+}
+.py-45 {
+  padding-block: 4.5rem;
+}
+.py-50 {
+  padding-block: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -309,9 +453,218 @@ li {
   align-items: center;
 }
 
+.theme-primary {
+  background: var(--theme-primary);
+}
+.theme-primary-light {
+  background: var(--theme-primary-light);
+}
+.theme-secondary {
+  background: var(--theme-secondary);
+}
+.theme-accent {
+  background: var(--theme-accent);
+}
+.bg-1 {
+  background: var(--bg-1);
+}
+.common-white {
+  background: var(--common-white);
+}
+.text-primary {
+  color: var(--theme-primary);
+}
+.text-primary-light {
+  color: var(--theme-primary-light);
+}
+.text-secondary {
+  color: var(--theme-secondary);
+}
+.text-white {
+  color: var(--common-white);
+}
+.text-center {
+  text-align: center;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 /* 03. Components */
 .container {
   max-width: 139rem;
   padding: 0 1.5rem;
   margin: 0 auto;
+}
+.section-title {
+  text-transform: capitalize;
+}
+
+.kv-btn {
+  display: inline-block;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+
+  padding: 1.25rem 1.65rem;
+  border-radius: 0.4rem;
+
+  & > span {
+    color: inherit;
+    margin-left: 0.6rem;
+
+    & > svg {
+      transform: translateY(0.2rem);
+    }
+  }
+}
+
+.kv-btn__primary {
+  color: var(--common-white);
+  background: var(--theme-primary);
+
+  &:hover {
+    color: var(--common-white);
+    background: var(--theme-secondary);
+  }
+}
+
+.kv-btn__secondary {
+  color: var(--common-white);
+  border: 0.1rem solid var(--common-white);
+  padding: 1.15rem 1.65rem;
+
+  &:hover {
+    color: var(--theme-primary);
+    background: var(--common-white);
+  }
+}
+
+/* 04. Heading Style */
+.kv-header {
+  padding-block: 1.4rem;
+}
+.kv-header__logo {
+  max-width: 14rem;
+}
+
+.kv-header__nav nav ul li {
+  display: inline-block;
+  margin-inline: 1.4rem;
+
+  & > a {
+    color: var(--theme-secondary);
+  }
+}
+
+/* 05. Hero Style */
+.kv-hero {
+  padding-top: 11.5rem;
+  padding-bottom: 18rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--theme-secondary);
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+.kv-hero__subtitle {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10rem;
+
+  & > span {
+    width: 0.6rem;
+    height: 0.6rem;
+    background: var(--theme-primary);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    transform: translateY(-2px);
+    margin-right: 7px;
+
+    &::before {
+      content: "";
+      width: 1.2rem;
+      height: 1.2rem;
+      background: var(--theme-primary);
+      opacity: 0.4;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      width: 1.6rem;
+      height: 1.6rem;
+      background: var(--theme-primary);
+      opacity: 0.2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  }
+}
+.kv-hero__wrap {
+  & p {
+    font-size: 1.8rem;
+    line-height: 2;
+    color: var(--common-white);
+    margin-top: 1rem;
+  }
+}
+
+/* 06. Notes Style */
+.kv-notes__item {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kv-notes__icon .kv-icon {
+  width: 6rem;
+  height: 6rem;
+  background: var(--theme-accent);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > svg {
+    color: var(--common-white);
+    font-size: 2.6rem;
+    margin-bottom: 0;
+  }
+}
+.kv-notes__title {
+  color: var(--theme-secondary);
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 600;
 }
